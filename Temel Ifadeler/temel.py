@@ -4,19 +4,19 @@
 #ogrenci not sistemi if elif ve else ile kontrol işlemleri
 from re import X
 from typing import final
-# vize_notu=input("Vize Notunuzu Giriniz:")
-# vize_notu=int(vize_notu)
+vize_notu=input("Vize Notunuzu Giriniz:")
+vize_notu=int(vize_notu)
 
-# final_notu=input("Final Notunuzu Giriniz:")
-# final_notu=int(final_notu)
+final_notu=input("Final Notunuzu Giriniz:")
+final_notu=int(final_notu)
 
-# ortalama=(vize_notu*40+final_notu*60)/100
+ortalama=(vize_notu*40+final_notu*60)/100
 
-# if ortalama>=45:
-#     print("Tebrikler Dersi Geçtiniz")
+if ortalama>=45:
+    print("Tebrikler Dersi Geçtiniz")
 
-# else:
-#     print("Malesef Bu Dersten Kaldınız")
+else:
+     print("Malesef Bu Dersten Kaldınız")
 #----------------------------------------------------------#
 
 #yas ortalamasına göre hesap yapma islemi
