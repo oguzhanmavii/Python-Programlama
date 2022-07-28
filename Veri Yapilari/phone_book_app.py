@@ -1,6 +1,7 @@
 import pickle
 import os
 from typing import List
+from typing import Tuple
 def Menu()-> None:
    print("1. Kayıtları Listele")
    print("2. Kayıt Ara")
@@ -37,8 +38,11 @@ def MainLoop() ->None:
 
 def ListRecords() -> None:
     recordList= ReadFile()
+    print(f"Kayıt Sayısı:{len(recordList)}\n") 
+    print(f"{'İsim':^10}{'Soyisim':^10}{'Telefon':^11}")
     for record in recordList:
-        print(f"{record.get('isim', ' ')}")
+        print(f"{record.get('isim', ' '):10.10} {record.get('Soyisim', ' '):10.10} {record.get('Telefon Numarası', ' '):11.11}")
+    print()    
 
 
 def SearchRecord() -> None:
