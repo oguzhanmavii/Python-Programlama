@@ -1,6 +1,1 @@
-Argümanlar ve Formal Parametreler ->
-Global Değişkenler, Yerel (Local) Değişkenler
-Fonksiyonlara Parametre Aktarımı ->
-Fonksiyonlardan Değer Döndürme ->
-Uygulama:
-Belli bir aralıkta rastgele sayılar üretme uygulması
+
