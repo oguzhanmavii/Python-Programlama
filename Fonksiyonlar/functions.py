@@ -19,17 +19,16 @@ def fonksiyon2(*kids):
 
 
 fonksiyon2("Ali","Ayvazoğlu ","\tAyşe")
+def hesapMakinesi(sayi1,sayi2):
+     return sayi1+sayi2
 
-# def hesapMakinesi(sayi1,sayi2):
-#     return sayi1+sayi2
+sayi1=int(input("1.sayi :"))
+sayi2=int(input("2.sayi :")) 
 
-# sayi1=int(input("1.sayi :"))
-# sayi2=int(input("2.sayi :")) 
+def hesapSonuc():
+     print("Sonuc:",hesapMakinesi(sayi1,sayi2))
 
-# def hesapSonuc():
-#     print("Sonuc:",hesapMakinesi(sayi1,sayi2))
-
-# hesapSonuc()
+hesapSonuc()
 
 
 
