@@ -30,9 +30,6 @@ if secim =='1':
     print("Hesap Makinesi Toplama İşlemi Yapıyor Lütfen Bekleyiniz...")
     time.sleep(2)
     print(s1,"+",s2,"=",Sum(s1,s2))
-    devam=input("1-)Tekrar İşlem Yap\n2-)Çıkış\n")
-    if(devam=="1"):
-        secim=input("Yapacağınız İşlemi Seçiniz :")
 
 
 elif secim=='2':

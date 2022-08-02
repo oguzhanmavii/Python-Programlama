@@ -24,9 +24,41 @@
 #"t"- Metin - Varsayılan değer. Metin modu
 
 #"b"- İkili - İkili mod (örn. resimler)
+import os ## dosya okuma işlemleri için kullanılan kütüphane bu kütüphane import edilmek zorundadır !
+import glob
+## file write
+target_path=open("E://github/Python-Programlama-//Dosyalar_ile_Calismak//file.txt","w")#burada hedef klasöre gitmeniz gerekir yoksa program patlıyor o yüzden bütün dizinleri tek tek belirtiniz !
+target_path.write("python file creation completed successfully")#oluşturuduğumuz txt dosyasına veri yazdık
+target_path.close()#oluşturduğumuz dosya ile işlem yapılmayacağı için kapattık
 
-f=open("DosyalarİleCalismak/demofile.txt")
 
-f = open("DosyalarİleCalismak/demofile.txt", "rt")
+## file read 
+target_path=open("E://github/Python-Programlama-//Dosyalar_ile_Calismak//file.txt","r")
+print(target_path.read())#burada oluşturduğumuz dosya içindeki veriyi python console üzerinden erişiyoruz 
+print(target_path.read(5))#burada oluşturduğumuz dosya içindeki verinin 5 karakterini okuyoruz 
+target_path.close()
+
+## file append
+target_path=open("E://github/Python-Programlama-//Dosyalar_ile_Calismak//file.txt","a")
+target_path.write("\nPython Programming Learning Intro")#burada oluşturulan dosyanın içerisinde bulunan veri haricinde yeni bir veriyi dosyaya ekliyoruz
+target_path.write("\nPython Programming Learning Advanced")
+target_path.close()
+
+## file delete
+##burada ilk başta dosyayı oluşturduk o yüzden silme işlemi yapılmadı
+##programı 2.kez çalıştırmadan önce target_path2=open() yazan satırı yorum satırı yapın dosya silinecektir
+##programı 3.kez çalıştırdığınızda dosyayı sildiği için aşağıdaki "The file does not exist" tırnak içine aldığım yazıyı python console'da göreceksiniz
+target_path2=open("E://github/Python-Programlama-//Dosyalar_ile_Calismak//file2.txt","w")## dosya oluşturuldu
+if os.path.exists("E://github/Python-Programlama-//Dosyalar_ile_Calismak//file2.txt"):
+  os.remove("E://github/Python-Programlama-//Dosyalar_ile_Calismak//file2.txt")
+else:
+  print("The file does not exist")
 
 
+
+## Remove Folder
+
+# import os
+# os.rmdir("myfolder") 
+
+##buradaki gibi yapılmaktadır

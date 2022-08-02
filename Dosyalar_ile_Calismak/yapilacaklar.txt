@@ -1,4 +1,3 @@
-Dosyaların içeriğini karşılaştırma uygulaması
-Uygulama:
-Dosyaların içindeki karakterleri sayma uygulaması
+1-Dosyaların içeriğini karşılaştırma uygulaması
+2-Dosyaların içindeki karakterleri sayma uygulaması
 
