@@ -1,0 +1,4 @@
+Dosyaların içeriğini karşılaştırma uygulaması
+Uygulama:
+Dosyaların içindeki karakterleri sayma uygulaması
+
