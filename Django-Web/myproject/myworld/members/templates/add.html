@@ -1,0 +1,24 @@
+<html>
+    <body bgcolor="#579295">
+    <style>
+     h1{text-align: center;}
+     .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+    </style>
+<h1>Kayıt Oluştur</h1>
+
+<form action="addRecord/" method="post" style="text-align:center;">
+{% csrf_token %}
+Adınız:<br>
+<input name="first">
+<br><br>
+Soyadınız:<br>
+<input name="last">
+<br><br>
+<input type="submit" value="Kaydet">
+</form>
+</body>
+</html>

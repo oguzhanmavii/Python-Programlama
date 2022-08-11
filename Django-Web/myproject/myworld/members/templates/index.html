@@ -1,0 +1,28 @@
+<html>
+<body bgcolor="#579295">
+<style>
+   h1{text-align: center;}
+   .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+   p{text-align: center;}
+</style>
+<h1></style>Üye Kayıt Sistemi</h1>
+<table border="1" class="center">
+{% for x in mymembers %}
+<tr>
+<td><a href="update/{{ x.id }}">Güncelle</a></td>
+<td>{{ x.id }}</td>
+<td>{{ x.firstname }}</td>
+<td>{{ x.lastname }}</td>
+<td><a href="delete/{{x.id}}">Sil</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+<a href="add/">Kayıt Ekle</a>
+</p>
+</body>
+</html>
