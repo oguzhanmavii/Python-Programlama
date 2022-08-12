@@ -9,7 +9,7 @@ bir HTML şablonundaki yer tutuculara ekleyerek tarayıcının görüntülemesi 
 olarak bir HTML sayfası oluşturarak web tarayıcısına bir yanıt döndürür.
 Django web uygulamaları genellikle bu adımların her birini işleyen kodu ayrı dosyalar halinde gruplandırır:
 
-https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Introduction/basic-django.png
+![basic-django](https://user-images.githubusercontent.com/77650437/184349561-723df699-9073-4c48-bfb0-6c25c590b90b.png)
 
 
 
