@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "typerpackage"
+version = "0.1.0"
+description = "this is my working example extras Typer Package now "
+authors = ["OĞUZHAN MAVİ <77650437+oguzhanmavii@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.6.1"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+typerpackage = "typerpackage.app"
+
